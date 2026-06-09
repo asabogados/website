@@ -18,6 +18,23 @@ export const translations = {
         subtitle: 'AS Abogados & Asociados interviene en asuntos penales de alta exigencia, donde el análisis jurídico, el control del tiempo procesal y la precisión en la ejecución pueden resultar determinantes.',
         ctaPrimary: 'Contactar',
         ctaSecondary: 'Áreas de práctica'
+      },
+      statement: 'El Derecho no consiste únicamente en interpretar normas, sino en comprender el contexto, anticipar escenarios y actuar con precisión sobre los elementos determinantes del procedimiento.',
+      trust: {
+        selective: 'Enfoque selectivo',
+        selectiveDesc: 'Asumimos únicamente los asuntos que admiten una dirección letrada de máxima calidad.',
+        complex: 'Alta complejidad',
+        complexDesc: 'Especializados en procedimientos de elevada exigencia técnica, documental y estratégica.',
+        discretion: 'Confidencialidad absoluta',
+        discretionDesc: 'La discreción no es un valor añadido: es un prerrequisito de toda nuestra actuación.'
+      },
+      areas: {
+        viewAll: 'Ver todas las áreas'
+      },
+      cta: {
+        label: 'Consulta profesional',
+        title: '¿Necesita un criterio jurídico independiente en un asunto penal?',
+        button: 'Iniciar consulta'
       }
     },
     areas: {
@@ -128,6 +145,23 @@ export const translations = {
         subtitle: 'AS Abogados & Asociados intervenes in highly demanding criminal matters, where legal analysis, procedural timing control, and execution precision can be decisive.',
         ctaPrimary: 'Contact',
         ctaSecondary: 'Practice Areas'
+      },
+      statement: 'Law is not merely about interpreting norms, but about understanding context, anticipating scenarios, and acting with precision on the decisive elements of each proceeding.',
+      trust: {
+        selective: 'Selective approach',
+        selectiveDesc: 'We only take on matters that allow for the highest quality legal direction.',
+        complex: 'High complexity',
+        complexDesc: 'Specialists in proceedings of high technical, documentary and strategic demand.',
+        discretion: 'Absolute confidentiality',
+        discretionDesc: 'Discretion is not an added value — it is a prerequisite of our entire practice.'
+      },
+      areas: {
+        viewAll: 'View all practice areas'
+      },
+      cta: {
+        label: 'Professional consultation',
+        title: 'Do you need an independent legal opinion on a criminal matter?',
+        button: 'Start consultation'
       }
     },
     areas: {

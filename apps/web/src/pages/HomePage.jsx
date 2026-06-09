@@ -39,7 +39,6 @@ function HomePage() {
               fetchpriority="high"
               loading="eager"
             />
-            {/* Additional subtle overlay to ensure text contrast */}
             <div className="absolute inset-0 bg-black/40" />
           </div>
 
@@ -78,7 +77,7 @@ function HomePage() {
         {/* Philosophy/Intro Minimal Block */}
         <section className="section-padding bg-background border-b border-border">
           <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, margin: "-100px" }}
@@ -95,6 +94,32 @@ function HomePage() {
                   {t('about.subtitle')}
                 </p>
               </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Brand Statement Block */}
+        <section className="relative py-24 md:py-36 overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <img
+              src="/columns.png"
+              alt=""
+              aria-hidden="true"
+              className="w-full h-full object-cover"
+              style={{ filter: 'blur(3px) brightness(0.15)', transform: 'scale(1.05)' }}
+            />
+          </div>
+          <div className="relative z-10 container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 1.2, ease: "easeOut" }}
+              className="max-w-4xl"
+            >
+              <p className="font-serif text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+                {t('home.statement')}
+              </p>
             </motion.div>
           </div>
         </section>
