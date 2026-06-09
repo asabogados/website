@@ -40,7 +40,11 @@ function AboutPage() {
                 {t('about.title')}
               </h1>
               
-              <div className="space-y-12 mt-16 text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
+              <p className="font-serif text-xl md:text-2xl text-foreground leading-relaxed mb-16 pb-16 border-b border-border">
+                {t('home.brand3')}
+              </p>
+
+              <div className="space-y-12 text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
                 {Array.isArray(content) && content.map((paragraph, idx) => (
                   <p key={idx}>{paragraph}</p>
                 ))}

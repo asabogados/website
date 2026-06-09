@@ -19,7 +19,15 @@ export const translations = {
         ctaPrimary: 'Contactar',
         ctaSecondary: 'Áreas de práctica'
       },
+      services: {
+        s1: 'Derecho Penal',
+        s2: 'Dirección estratégica.',
+        s3: 'Derecho Procesal'
+      },
       statement: 'El Derecho no consiste únicamente en interpretar normas, sino en comprender el contexto, anticipar escenarios y actuar con precisión sobre los elementos determinantes del procedimiento.',
+      brand1: 'AS es una figura asociada a la excelencia, la capacidad decisiva, el triunfo y el dominio técnico.',
+      brand2: 'AS representa rigor, precisión y dirección estratégica.',
+      brand3: 'AS Abogados nace de una visión estratégica de la práctica jurídica: rigurosa, técnica y orientada a resolver asuntos de especial complejidad.',
       trust: {
         selective: 'Enfoque selectivo',
         selectiveDesc: 'Asumimos únicamente los asuntos que admiten una dirección letrada de máxima calidad.',
@@ -149,7 +157,15 @@ export const translations = {
         ctaPrimary: 'Contact',
         ctaSecondary: 'Practice Areas'
       },
+      services: {
+        s1: 'Criminal Law',
+        s2: 'Strategic direction.',
+        s3: 'Procedural Law'
+      },
       statement: 'Law is not merely about interpreting norms, but about understanding context, anticipating scenarios, and acting with precision on the decisive elements of each proceeding.',
+      brand1: 'AS is a figure associated with excellence, decisive capability, triumph and technical mastery.',
+      brand2: 'AS stands for rigour, precision and strategic direction.',
+      brand3: 'AS Abogados was born from a strategic vision of legal practice: rigorous, technical and focused on resolving matters of exceptional complexity.',
       trust: {
         selective: 'Selective approach',
         selectiveDesc: 'We only take on matters that allow for the highest quality legal direction.',
