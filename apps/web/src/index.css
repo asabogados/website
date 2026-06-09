@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Premium Institutional Design System */
+    
+    /* Off-white/broken white */
+    --background: 40 20% 97%;
+    /* Deep black */
+    --foreground: 0 0% 12%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
+    
+    /* Stone/Institutional tones */
+    --primary: 30 15% 25%;
+    --primary-foreground: 40 20% 97%;
+    
+    /* Muted grays */
+    --secondary: 40 10% 92%;
+    --secondary-foreground: 0 0% 15%;
+    
+    --muted: 40 10% 90%;
+    --muted-foreground: 0 0% 40%;
+    
+    /* Subtle stone accents */
+    --accent: 30 20% 45%;
+    --accent-foreground: 40 20% 97%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Institutional gray */
+    --border: 40 15% 85%;
+    --input: 40 15% 85%;
+    --ring: 30 15% 25%;
+    
+    /* Sharp corners for institutional feel */
+    --radius: 0rem;
+  }
+
+  .dark {
+    /* Maintained for safety, though light mode is the intended institutional look */
+    --background: 0 0% 8%;
+    --foreground: 40 20% 95%;
+    --card: 0 0% 10%;
+    --card-foreground: 40 20% 95%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 40 20% 95%;
+    --primary: 40 20% 95%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 40 20% 95%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 30 15% 35%;
+    --accent-foreground: 40 20% 95%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 83%;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    overflow-x: clip;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  }
+
+  p {
+    max-width: 65ch;
+  }
+}
+
+@layer components {
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+
+  .institutional-border {
+    border: 1px solid hsl(var(--border));
+    background-color: hsl(var(--background));
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
