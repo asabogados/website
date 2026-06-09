@@ -104,6 +104,9 @@ export const translations = {
       },
       title: 'Contacto',
       subtitle: 'Para consultas de índole profesional e institucional.',
+      phone: 'Teléfono',
+      address: 'Dirección',
+      email: 'Correo electrónico',
       form: {
         name: 'Nombre y Apellidos',
         email: 'Correo Electrónico',
@@ -231,6 +234,9 @@ export const translations = {
       },
       title: 'Contact',
       subtitle: 'For professional and institutional inquiries.',
+      phone: 'Phone',
+      address: 'Address',
+      email: 'Email',
       form: {
         name: 'Full Name',
         email: 'Email Address',

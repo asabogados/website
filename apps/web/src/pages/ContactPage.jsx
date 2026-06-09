@@ -43,13 +43,37 @@ function ContactPage() {
                   {t('contact.subtitle')}
                 </p>
 
-                <div className="border-t border-border pt-8 space-y-6">
+                <div className="border-t border-border pt-8 space-y-8">
+                  <div>
+                    <span className="text-[10px] font-semibold tracking-widest uppercase text-muted-foreground block mb-2">
+                      {t('contact.phone')}
+                    </span>
+                    <a
+                      href="tel:+34654804155"
+                      className="text-sm text-foreground hover:text-primary transition-colors duration-200"
+                    >
+                      +34 654 804 155
+                    </a>
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-semibold tracking-widest uppercase text-muted-foreground block mb-2">
+                      {t('contact.email')}
+                    </span>
+                    <a
+                      href="mailto:consultas@asabogadosasociados.com"
+                      className="text-sm text-foreground hover:text-primary transition-colors duration-200"
+                    >
+                      consultas@asabogadosasociados.com
+                    </a>
+                  </div>
                   <div>
                     <span className="text-[10px] font-semibold tracking-widest uppercase text-muted-foreground block mb-2">
                       {t('footer.headquarters')}
                     </span>
-                    <address className="not-italic text-sm text-foreground">
-                      Madrid, España
+                    <address className="not-italic text-sm text-foreground leading-relaxed">
+                      29016 Málaga, España
+                      <br />
+                      <span className="text-muted-foreground">Madrid · Marbella</span>
                     </address>
                   </div>
                 </div>
