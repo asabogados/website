@@ -149,7 +149,7 @@ function HomePage() {
           </div>
         </section>
 
-        {/* 3 — "AS es una figura..." — blanco, mismo grid que filosofía */}
+        {/* 3 — "AS es una figura..." — blanco, grid */}
         <section className="section-padding bg-background border-b border-border">
           <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
