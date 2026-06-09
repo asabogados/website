@@ -134,7 +134,7 @@ export const translations = {
     },
     footer: {
       rights: 'Todos los derechos reservados.',
-      discretion: 'La discreción y confidencialidad rigen toda comunicación con la firma.',
+      discretion: 'Criterio jurídico. Precisión procesal.',
       headquarters: 'Sede Institucional'
     }
   },
@@ -272,7 +272,7 @@ export const translations = {
     },
     footer: {
       rights: 'All rights reserved.',
-      discretion: 'Discretion and confidentiality govern all communication with the firm.',
+      discretion: 'Legal judgment. Procedural precision.',
       headquarters: 'Institutional Headquarters'
     }
   }
