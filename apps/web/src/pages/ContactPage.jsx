@@ -21,7 +21,7 @@ function ContactPage() {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />
-        <link rel="canonical" href="https://asabogados.com/contact" />
+        <link rel="canonical" href="https://asabogadosasociados.com/contact" />
       </Helmet>
 
       <Header />

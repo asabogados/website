@@ -24,10 +24,10 @@ function Footer() {
             </span>
             <div className="flex flex-col gap-4">
               <span className="text-sm text-muted-foreground">
-                Málaga I Madrid I Marbella I
+                Málaga · Madrid · Marbella
               </span>
               <span className="text-sm text-muted-foreground">
-                consultas@asabogados.com
+                consultas@asabogadosasociados.com
               </span>
             </div>
           </div>
