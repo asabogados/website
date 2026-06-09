@@ -34,6 +34,10 @@ function HomePage() {
               src="https://horizons-cdn.hostinger.com/79c69ed8-ea9a-47ca-bedd-0cb9f3493118/recepcion-con-mostrador-freeport-en-nogal-italiano-y-neromarquina-con-sillones-square-32-8pYwy.jpg"
               alt="Recepción de AS Abogados & Asociados"
               className="w-full h-full object-cover opacity-50"
+              width="1920"
+              height="1080"
+              fetchpriority="high"
+              loading="eager"
             />
             {/* Additional subtle overlay to ensure text contrast */}
             <div className="absolute inset-0 bg-black/40" />
