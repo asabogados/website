@@ -8,6 +8,7 @@ import AreasPage from './pages/AreasPage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import PublicAffairsPage from './pages/PublicAffairsPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
+import NotFoundPage from './pages/NotFoundPage.jsx';
 import { LanguageProvider } from './context/LanguageContext.jsx';
 
 function App() {
@@ -22,8 +23,8 @@ function App() {
           <Route path="/public-affairs" element={<PublicAffairsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           
-          {/* Catch-all 404 falling back to Home */}
-          <Route path="*" element={<HomePage />} />
+          {/* 404 */}
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <Toaster position="bottom-right" />
       </Router>
