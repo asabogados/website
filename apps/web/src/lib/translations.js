@@ -14,7 +14,7 @@ export const translations = {
         description: 'Dirección estratégica en Derecho Penal. Defensa técnica en procedimientos complejos.'
       },
       hero: {
-        title: 'Dirección estratégica en Derecho Penal. Defensa técnica en procedimientos complejos.',
+        title: 'Dirección estratégica en Derecho Penal.',
         subtitle: 'AS Abogados & Asociados interviene en asuntos penales de alta exigencia, donde el análisis jurídico, el control del tiempo procesal y la precisión en la ejecución pueden resultar determinantes.',
         ctaPrimary: 'Contactar',
         ctaSecondary: 'Áreas de práctica'
@@ -152,7 +152,7 @@ export const translations = {
         description: 'Strategic direction in Criminal Law. Technical defense in complex proceedings.'
       },
       hero: {
-        title: 'Strategic direction in Criminal Law. Technical defense in complex proceedings.',
+        title: 'Strategic direction in Criminal Law.',
         subtitle: 'AS Abogados & Asociados intervenes in highly demanding criminal matters, where legal analysis, procedural timing control, and execution precision can be decisive.',
         ctaPrimary: 'Contact',
         ctaSecondary: 'Practice Areas'
