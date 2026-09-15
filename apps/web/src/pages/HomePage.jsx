@@ -29,7 +29,7 @@ function HomePage() {
         <meta name="description" content="Firma centrada en Derecho Penal, defensa penal estratégica y litigación penal compleja. Rigor técnico, criterio jurídico y precisión procesal." />
         <meta property="og:title" content="AS Abogados & Asociados - Dirección estratégica en Derecho Penal" />
         <meta property="og:description" content="Defensa penal técnica en procedimientos complejos. Estrategia, preparación y precisión jurídica en asuntos penales de alta exigencia." />
-        <meta property="og:image" content="https://horizons-cdn.hostinger.com/79c69ed8-ea9a-47ca-bedd-0cb9f3493118/d7cff25dbbaed16798bf7d9fc9745b69.png" />
+        <meta property="og:image" content="https://asabogadosasociados.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />
@@ -44,8 +44,8 @@ function HomePage() {
         <section className="relative min-h-[85vh] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0 bg-black">
             <img
-              src="https://horizons-cdn.hostinger.com/79c69ed8-ea9a-47ca-bedd-0cb9f3493118/recepcion-con-mostrador-freeport-en-nogal-italiano-y-neromarquina-con-sillones-square-32-8pYwy.jpg"
-              alt="Recepción de AS Abogados & Asociados"
+              src="/tribunal.png"
+              alt="Tribunal Supremo de España"
               className="w-full h-full object-cover opacity-50"
               width="1920"
               height="1080"

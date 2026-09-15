@@ -18,7 +18,7 @@ function AreasPage() {
         <meta name="description" content="Especialidades penales: defensa penal, litigación penal compleja, penal económico, compliance penal y procedimientos penales de alta exigencia." />
         <meta property="og:title" content="Áreas de Práctica - AS Abogados & Asociados" />
         <meta property="og:description" content="Especialidades en Derecho Penal: defensa estratégica, litigación compleja y compliance penal con rigor técnico." />
-        <meta property="og:image" content="https://horizons-cdn.hostinger.com/79c69ed8-ea9a-47ca-bedd-0cb9f3493118/d7cff25dbbaed16798bf7d9fc9745b69.png" />
+        <meta property="og:image" content="https://asabogadosasociados.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />

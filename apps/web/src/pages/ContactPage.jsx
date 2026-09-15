@@ -17,7 +17,7 @@ function ContactPage() {
         <meta name="description" content="Contacte con AS Abogados & Asociados para consultoría profesional en Derecho Penal, defensa penal y litigación penal compleja." />
         <meta property="og:title" content="Contacto - AS Abogados & Asociados" />
         <meta property="og:description" content="Contacte con nuestra firma para consultoría profesional en asuntos penales complejos." />
-        <meta property="og:image" content="https://horizons-cdn.hostinger.com/79c69ed8-ea9a-47ca-bedd-0cb9f3493118/d7cff25dbbaed16798bf7d9fc9745b69.png" />
+        <meta property="og:image" content="https://asabogadosasociados.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />

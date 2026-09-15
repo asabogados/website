@@ -18,7 +18,7 @@ function AboutPage() {
         <meta name="description" content="Firma de abogados penalistas con criterio jurídico, excelencia procesal y especialización en asuntos penales complejos de nivel internacional." />
         <meta property="og:title" content="Sobre Nosotros - AS Abogados & Asociados" />
         <meta property="og:description" content="Criterio jurídico, excelencia procesal y especialización en Derecho Penal con rigor técnico internacional." />
-        <meta property="og:image" content="https://horizons-cdn.hostinger.com/79c69ed8-ea9a-47ca-bedd-0cb9f3493118/d7cff25dbbaed16798bf7d9fc9745b69.png" />
+        <meta property="og:image" content="https://asabogadosasociados.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />

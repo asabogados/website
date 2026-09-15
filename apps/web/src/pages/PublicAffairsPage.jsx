@@ -18,7 +18,7 @@ function PublicAffairsPage() {
         <meta name="description" content="Análisis jurídico especializado en asuntos públicos y procedimientos penales de relevancia institucional con perspectiva técnica." />
         <meta property="og:title" content="Asuntos Públicos - AS Abogados & Asociados" />
         <meta property="og:description" content="Análisis jurídico especializado en asuntos públicos y procedimientos penales de relevancia institucional." />
-        <meta property="og:image" content="https://horizons-cdn.hostinger.com/79c69ed8-ea9a-47ca-bedd-0cb9f3493118/d7cff25dbbaed16798bf7d9fc9745b69.png" />
+        <meta property="og:image" content="https://asabogadosasociados.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />

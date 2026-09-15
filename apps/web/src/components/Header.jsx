@@ -43,7 +43,7 @@ function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center group shrink-0 py-2" onClick={() => setIsOpen(false)}>
             <img 
-              src="https://horizons-cdn.hostinger.com/79c69ed8-ea9a-47ca-bedd-0cb9f3493118/d7cff25dbbaed16798bf7d9fc9745b69.png" 
+              src="/favicon.png" 
               alt="AS Abogados & Asociados - Firma penal" 
               className="h-12 sm:h-14 w-auto object-contain group-hover:opacity-80 transition-opacity duration-300"
             />
@@ -141,7 +141,7 @@ function Header() {
 
                   <div className="mb-10">
                     <img 
-                      src="https://horizons-cdn.hostinger.com/79c69ed8-ea9a-47ca-bedd-0cb9f3493118/d7cff25dbbaed16798bf7d9fc9745b69.png" 
+                      src="/favicon.png" 
                       alt="AS Abogados & Asociados - Firma penal" 
                       className="h-16 w-auto object-contain opacity-90"
                     />
