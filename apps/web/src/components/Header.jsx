@@ -1,11 +1,19 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from '@/hooks/useTranslation.jsx';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ES, GB } from 'country-flag-icons/react/3x2';
+
+const BurgerIcon = ({ className }) => (
+  <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+    <line x1="2" y1="6" x2="22" y2="6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+    <line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+    <line x1="2" y1="18" x2="22" y2="18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+  </svg>
+);
 
 function Header() {
   const location = useLocation();
@@ -50,7 +58,7 @@ function Header() {
               onClick={() => setIsOpen(true)}
               aria-label="Abrir menú"
             >
-              <Menu className="h-6 w-6 text-primary" />
+              <BurgerIcon className="h-7 w-7 text-primary" />
             </Button>
           </div>
 
