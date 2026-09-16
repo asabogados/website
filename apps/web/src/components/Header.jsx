@@ -40,9 +40,22 @@ function Header() {
   return (
     <header className="sticky top-0 z-40 w-full bg-white border-b border-border shadow-sm transition-all duration-300">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 sm:h-20 items-center justify-between gap-6">
-          {/* Logo */}
-          <Link to="/" className="flex items-center group shrink-0" onClick={() => setIsOpen(false)}>
+        <div className="grid grid-cols-3 lg:flex h-16 sm:h-20 items-center lg:justify-between gap-6">
+          {/* Mobile menu trigger — left */}
+          <div className="flex lg:hidden justify-self-start">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="hover:bg-secondary/50 h-9 w-9 shrink-0"
+              onClick={() => setIsOpen(true)}
+              aria-label="Abrir menú"
+            >
+              <Menu className="h-5 w-5 text-primary" />
+            </Button>
+          </div>
+
+          {/* Logo — centered on mobile, left on desktop */}
+          <Link to="/" className="flex items-center justify-self-center lg:justify-self-auto group shrink-0" onClick={() => setIsOpen(false)}>
             <img
               src="/logo-header.png"
               alt="AS Abogados & Asociados - Firma penal"
@@ -52,6 +65,28 @@ function Header() {
               AS Abogados & Asociados
             </span>
           </Link>
+
+          {/* Mobile language switcher — right */}
+          <div className="flex lg:hidden justify-self-end items-center gap-2">
+            <button
+              onClick={() => setLanguage('es')}
+              aria-label="Español"
+              className={`transition-opacity duration-200 ${
+                language === 'es' ? 'opacity-100' : 'opacity-40'
+              }`}
+            >
+              <ES className="w-5 h-auto rounded-[1px] shrink-0" title="Español" />
+            </button>
+            <button
+              onClick={() => setLanguage('en')}
+              aria-label="English"
+              className={`transition-opacity duration-200 ${
+                language === 'en' ? 'opacity-100' : 'opacity-40'
+              }`}
+            >
+              <GB className="w-5 h-auto rounded-[1px] shrink-0" title="English" />
+            </button>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8 ml-auto">
@@ -95,40 +130,6 @@ function Header() {
               </button>
             </div>
           </nav>
-
-          {/* Mobile: language switcher + menu trigger */}
-          <div className="flex lg:hidden items-center gap-4 ml-auto">
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setLanguage('es')}
-                aria-label="Español"
-                className={`transition-opacity duration-200 ${
-                  language === 'es' ? 'opacity-100' : 'opacity-40'
-                }`}
-              >
-                <ES className="w-5 h-auto rounded-[1px] shrink-0" title="Español" />
-              </button>
-              <button
-                onClick={() => setLanguage('en')}
-                aria-label="English"
-                className={`transition-opacity duration-200 ${
-                  language === 'en' ? 'opacity-100' : 'opacity-40'
-                }`}
-              >
-                <GB className="w-5 h-auto rounded-[1px] shrink-0" title="English" />
-              </button>
-            </div>
-
-          <Button
-            variant="ghost"
-            size="icon"
-            className="hover:bg-secondary/50 h-9 w-9 shrink-0"
-            onClick={() => setIsOpen(true)}
-            aria-label="Abrir menú"
-          >
-            <Menu className="h-5 w-5 text-primary" />
-          </Button>
-          </div>
 
           {/* Custom Mobile Menu overlay & panel with Framer Motion */}
           <AnimatePresence>
