@@ -5,6 +5,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from '@/hooks/useTranslation.jsx';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ES, GB } from 'country-flag-icons/react/3x2';
 
 function Header() {
   const location = useLocation();
@@ -79,7 +80,7 @@ function Header() {
                   language === 'es' ? 'opacity-100' : 'opacity-40 hover:opacity-70'
                 }`}
               >
-                <span className="text-base leading-none">🇪🇸</span>
+                <ES className="w-4 h-auto rounded-[1px] shrink-0" title="Español" />
                 ES
               </button>
               <button
@@ -89,7 +90,7 @@ function Header() {
                   language === 'en' ? 'opacity-100' : 'opacity-40 hover:opacity-70'
                 }`}
               >
-                <span className="text-base leading-none">🇬🇧</span>
+                <GB className="w-4 h-auto rounded-[1px] shrink-0" title="English" />
                 EN
               </button>
             </div>
@@ -176,7 +177,7 @@ function Header() {
                           language === 'es' ? 'opacity-100' : 'opacity-40'
                         }`}
                       >
-                        <span className="text-lg leading-none">🇪🇸</span>
+                        <ES className="w-5 h-auto rounded-[1px] shrink-0" title="Español" />
                         ESPAÑOL
                       </button>
                       <button
@@ -188,7 +189,7 @@ function Header() {
                           language === 'en' ? 'opacity-100' : 'opacity-40'
                         }`}
                       >
-                        <span className="text-lg leading-none">🇬🇧</span>
+                        <GB className="w-5 h-auto rounded-[1px] shrink-0" title="English" />
                         ENGLISH
                       </button>
                     </div>
