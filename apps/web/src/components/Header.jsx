@@ -96,16 +96,39 @@ function Header() {
             </div>
           </nav>
 
-          {/* Mobile Menu Trigger */}
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            className="lg:hidden ml-auto hover:bg-secondary/50 h-9 w-9 shrink-0"
+          {/* Mobile: language switcher + menu trigger */}
+          <div className="flex lg:hidden items-center gap-4 ml-auto">
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setLanguage('es')}
+                aria-label="Español"
+                className={`transition-opacity duration-200 ${
+                  language === 'es' ? 'opacity-100' : 'opacity-40'
+                }`}
+              >
+                <ES className="w-5 h-auto rounded-[1px] shrink-0" title="Español" />
+              </button>
+              <button
+                onClick={() => setLanguage('en')}
+                aria-label="English"
+                className={`transition-opacity duration-200 ${
+                  language === 'en' ? 'opacity-100' : 'opacity-40'
+                }`}
+              >
+                <GB className="w-5 h-auto rounded-[1px] shrink-0" title="English" />
+              </button>
+            </div>
+
+          <Button
+            variant="ghost"
+            size="icon"
+            className="hover:bg-secondary/50 h-9 w-9 shrink-0"
             onClick={() => setIsOpen(true)}
             aria-label="Abrir menú"
           >
             <Menu className="h-5 w-5 text-primary" />
           </Button>
+          </div>
 
           {/* Custom Mobile Menu overlay & panel with Framer Motion */}
           <AnimatePresence>
