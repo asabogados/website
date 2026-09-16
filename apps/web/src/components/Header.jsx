@@ -9,9 +9,9 @@ import { ES, GB } from 'country-flag-icons/react/3x2';
 
 const BurgerIcon = ({ className }) => (
   <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
-    <line x1="2" y1="6" x2="22" y2="6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-    <line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-    <line x1="2" y1="18" x2="22" y2="18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+    <line x1="0" y1="5" x2="24" y2="5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="butt" />
+    <line x1="0" y1="12" x2="24" y2="12" stroke="currentColor" strokeWidth="2.5" strokeLinecap="butt" />
+    <line x1="0" y1="19" x2="24" y2="19" stroke="currentColor" strokeWidth="2.5" strokeLinecap="butt" />
   </svg>
 );
 
@@ -58,7 +58,7 @@ function Header() {
               onClick={() => setIsOpen(true)}
               aria-label="Abrir menú"
             >
-              <BurgerIcon className="h-7 w-7 text-primary" />
+              <BurgerIcon className="h-8 w-8 text-primary" />
             </Button>
           </div>
 
