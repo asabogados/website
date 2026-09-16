@@ -71,22 +71,25 @@ function Header() {
               </Link>
             ))}
 
-            <div className="flex items-center gap-2 ml-6 pl-6 border-l border-border h-4">
+            <div className="flex items-center gap-3 ml-6 pl-6 border-l border-border">
               <button
                 onClick={() => setLanguage('es')}
-                className={`text-[10px] font-semibold tracking-widest transition-colors duration-200 ${
-                  language === 'es' ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
+                aria-label="Español"
+                className={`flex items-center gap-1.5 text-[10px] font-semibold tracking-widest transition-opacity duration-200 ${
+                  language === 'es' ? 'opacity-100' : 'opacity-40 hover:opacity-70'
                 }`}
               >
+                <span className="text-base leading-none">🇪🇸</span>
                 ES
               </button>
-              <span className="text-muted-foreground/30 text-[9px] mx-1">/</span>
               <button
                 onClick={() => setLanguage('en')}
-                className={`text-[10px] font-semibold tracking-widest transition-colors duration-200 ${
-                  language === 'en' ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
+                aria-label="English"
+                className={`flex items-center gap-1.5 text-[10px] font-semibold tracking-widest transition-opacity duration-200 ${
+                  language === 'en' ? 'opacity-100' : 'opacity-40 hover:opacity-70'
                 }`}
               >
+                <span className="text-base leading-none">🇬🇧</span>
                 EN
               </button>
             </div>
@@ -163,28 +166,29 @@ function Header() {
                       </Link>
                     ))}
                     
-                    <div className="flex items-center gap-4 mt-8 pt-8 border-t border-border">
+                    <div className="flex items-center gap-5 mt-8 pt-8 border-t border-border">
                       <button
                         onClick={() => {
                           setLanguage('es');
                           setIsOpen(false);
                         }}
-                        className={`text-xs font-semibold tracking-widest transition-colors duration-200 ${
-                          language === 'es' ? 'text-primary' : 'text-muted-foreground'
+                        className={`flex items-center gap-2 text-xs font-semibold tracking-widest transition-opacity duration-200 ${
+                          language === 'es' ? 'opacity-100' : 'opacity-40'
                         }`}
                       >
+                        <span className="text-lg leading-none">🇪🇸</span>
                         ESPAÑOL
                       </button>
-                      <span className="text-muted-foreground/30 text-[10px]">|</span>
                       <button
                         onClick={() => {
                           setLanguage('en');
                           setIsOpen(false);
                         }}
-                        className={`text-xs font-semibold tracking-widest transition-colors duration-200 ${
-                          language === 'en' ? 'text-primary' : 'text-muted-foreground'
+                        className={`flex items-center gap-2 text-xs font-semibold tracking-widest transition-opacity duration-200 ${
+                          language === 'en' ? 'opacity-100' : 'opacity-40'
                         }`}
                       >
+                        <span className="text-lg leading-none">🇬🇧</span>
                         ENGLISH
                       </button>
                     </div>
