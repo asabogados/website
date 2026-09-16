@@ -46,11 +46,11 @@ function Header() {
             <Button
               variant="ghost"
               size="icon"
-              className="hover:bg-secondary/50 h-9 w-9 shrink-0"
+              className="hover:bg-secondary/50 h-11 w-11 -ml-2 shrink-0"
               onClick={() => setIsOpen(true)}
               aria-label="Abrir menú"
             >
-              <Menu className="h-5 w-5 text-primary" />
+              <Menu className="h-6 w-6 text-primary" />
             </Button>
           </div>
 
@@ -67,24 +67,24 @@ function Header() {
           </Link>
 
           {/* Mobile language switcher — right */}
-          <div className="flex lg:hidden justify-self-end items-center gap-2">
+          <div className="flex lg:hidden justify-self-end items-center -mr-2">
             <button
               onClick={() => setLanguage('es')}
               aria-label="Español"
-              className={`transition-opacity duration-200 ${
+              className={`flex items-center justify-center h-11 w-11 transition-opacity duration-200 ${
                 language === 'es' ? 'opacity-100' : 'opacity-40'
               }`}
             >
-              <ES className="w-5 h-auto rounded-[1px] shrink-0" title="Español" />
+              <ES className="w-6 h-auto rounded-[1px] shrink-0" title="Español" />
             </button>
             <button
               onClick={() => setLanguage('en')}
               aria-label="English"
-              className={`transition-opacity duration-200 ${
+              className={`flex items-center justify-center h-11 w-11 transition-opacity duration-200 ${
                 language === 'en' ? 'opacity-100' : 'opacity-40'
               }`}
             >
-              <GB className="w-5 h-auto rounded-[1px] shrink-0" title="English" />
+              <GB className="w-6 h-auto rounded-[1px] shrink-0" title="English" />
             </button>
           </div>
 
