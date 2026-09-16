@@ -40,13 +40,13 @@ function Header() {
   return (
     <header className="sticky top-0 z-40 w-full bg-white border-b border-border shadow-sm transition-all duration-300">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 sm:h-24 items-center justify-between gap-6">
+        <div className="flex h-16 sm:h-20 items-center justify-between gap-6">
           {/* Logo */}
           <Link to="/" className="flex items-center group shrink-0" onClick={() => setIsOpen(false)}>
             <img
-              src="/favicon.png"
+              src="/logo-header.png"
               alt="AS Abogados & Asociados - Firma penal"
-              className="h-20 sm:h-24 w-auto object-contain group-hover:opacity-80 transition-opacity duration-300"
+              className="h-12 sm:h-14 w-auto object-contain group-hover:opacity-80 transition-opacity duration-300"
             />
             <span className="sr-only text-2xl tracking-widest font-serif font-semibold">
               AS Abogados & Asociados
@@ -144,10 +144,10 @@ function Header() {
                   </div>
 
                   <div className="mb-10">
-                    <img 
-                      src="/favicon.png" 
-                      alt="AS Abogados & Asociados - Firma penal" 
-                      className="h-24 w-auto object-contain opacity-90"
+                    <img
+                      src="/logo-header.png"
+                      alt="AS Abogados & Asociados - Firma penal"
+                      className="h-16 w-auto object-contain opacity-90"
                     />
                   </div>
 
