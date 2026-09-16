@@ -45,7 +45,7 @@ function Header() {
             <img 
               src="/favicon.png" 
               alt="AS Abogados & Asociados - Firma penal" 
-              className="h-12 sm:h-14 w-auto object-contain group-hover:opacity-80 transition-opacity duration-300"
+              className="h-16 sm:h-16 w-auto object-contain group-hover:opacity-80 transition-opacity duration-300"
             />
             <span className="sr-only text-2xl tracking-widest font-serif font-semibold">
               AS Abogados & Asociados
