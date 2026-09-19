@@ -5,7 +5,7 @@ export const translations = {
       home: 'Inicio',
       areas: 'Áreas de Práctica',
       about: 'Sobre Nosotros',
-      publicAffairs: 'Asuntos',
+      publicAffairs: 'Experiencia',
       contact: 'Contacto'
     },
     home: {
@@ -107,11 +107,11 @@ export const translations = {
     },
     publicAffairs: {
       meta: {
-        title: 'Asuntos | AS Abogados & Asociados',
+        title: 'Experiencia | AS Abogados & Asociados',
         description: 'Asuntos penales en los que ha intervenido AS Abogados & Asociados.'
       },
-      title: 'Asuntos en los que hemos intervenido',
-      subtitle: 'Selección de asuntos con repercusión en medios de comunicación nacionales e internacionales.',
+      title: 'Experiencia',
+      subtitle: 'Asuntos en los que hemos intervenido, con cobertura de medios nacionales e internacionales.',
       filters: {
         all: 'Todos',
         national: 'Nacionales',
@@ -164,7 +164,7 @@ export const translations = {
       home: 'Home',
       areas: 'Practice Areas',
       about: 'About Us',
-      publicAffairs: 'Matters',
+      publicAffairs: 'Experience',
       contact: 'Contact'
     },
     home: {
@@ -266,11 +266,11 @@ export const translations = {
     },
     publicAffairs: {
       meta: {
-        title: 'Matters | AS Abogados & Asociados',
+        title: 'Experience | AS Abogados & Asociados',
         description: 'Criminal matters in which AS Abogados & Asociados has acted.'
       },
-      title: 'Matters in which we have acted',
-      subtitle: 'A selection of matters covered by national and international media.',
+      title: 'Experience',
+      subtitle: 'Matters in which we have acted, covered by national and international media.',
       filters: {
         all: 'All',
         national: 'National',

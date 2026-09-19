@@ -91,10 +91,10 @@ function PublicAffairsPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Helmet>
-        <title>Asuntos en los que hemos intervenido | AS Abogados & Asociados</title>
+        <title>Experiencia | AS Abogados & Asociados - Asuntos en los que hemos intervenido</title>
         <meta name="description" content="Selección de asuntos penales en los que ha intervenido AS Abogados & Asociados, con cobertura de medios de comunicación nacionales e internacionales." />
-        <meta property="og:title" content="Asuntos en los que hemos intervenido - AS Abogados & Asociados" />
-        <meta property="og:description" content="Selección de asuntos penales con repercusión en medios de comunicación nacionales e internacionales." />
+        <meta property="og:title" content="Experiencia - AS Abogados & Asociados" />
+        <meta property="og:description" content="Asuntos en los que hemos intervenido, con cobertura de medios de comunicación nacionales e internacionales." />
         <meta property="og:image" content="https://asabogadosasociados.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
