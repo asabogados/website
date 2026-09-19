@@ -46,7 +46,7 @@ function MatterCard({ matter, index }) {
               decoding="async"
               referrerPolicy="no-referrer"
               onError={() => setImageFailed(true)}
-              className="h-full w-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-[1.02] transition-all duration-500"
+              className="h-full w-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
             />
           </div>
         )}

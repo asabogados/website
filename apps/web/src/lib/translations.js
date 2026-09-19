@@ -4,7 +4,7 @@ export const translations = {
     nav: {
       home: 'Inicio',
       areas: 'Áreas de Práctica',
-      about: 'Sobre Nosotros',
+      about: 'La Firma',
       publicAffairs: 'Experiencia',
       contact: 'Contacto'
     },
@@ -86,9 +86,11 @@ export const translations = {
     },
     about: {
       meta: {
-        title: 'Sobre Nosotros | AS Abogados & Asociados',
+        title: 'La Firma | AS Abogados & Asociados',
         description: 'Firma de criterio jurídico y excelencia procesal.'
       },
+      heading: 'La Firma',
+      philosophy: 'Filosofía',
       title: 'Criterio Jurídico. Precisión Técnica.',
       subtitle: 'Nuestra firma se fundamenta en la excelencia procesal y la máxima discreción en la gestión de asuntos sensibles.',
       content: [
@@ -96,6 +98,14 @@ export const translations = {
         'Rechazamos el volumen en favor de la dedicación exclusiva. Cada asunto requiere una inmersión absoluta en las actuaciones, donde el estudio jurisprudencial y la dogmática penal sustentan cada movimiento procesal.',
         'La discreción no es un valor añadido, sino un prerrequisito indispensable de nuestra actuación profesional.'
       ],
+      values: {
+        title: 'Valores',
+        items: [
+          { title: 'Enfoque selectivo', desc: 'Asumimos únicamente los asuntos que admiten una dirección letrada de máxima calidad.' },
+          { title: 'Alta complejidad', desc: 'Especializados en procedimientos de elevada exigencia técnica, documental y estratégica.' },
+          { title: 'Confidencialidad absoluta', desc: 'La discreción no es un valor añadido: es un prerrequisito de toda nuestra actuación.' }
+        ]
+      },
       team: {
         title: 'Equipo',
         members: [
@@ -163,7 +173,7 @@ export const translations = {
     nav: {
       home: 'Home',
       areas: 'Practice Areas',
-      about: 'About Us',
+      about: 'The Firm',
       publicAffairs: 'Experience',
       contact: 'Contact'
     },
@@ -245,9 +255,11 @@ export const translations = {
     },
     about: {
       meta: {
-        title: 'About Us | AS Abogados & Asociados',
+        title: 'The Firm | AS Abogados & Asociados',
         description: 'Firm of legal judgment and procedural excellence.'
       },
+      heading: 'The Firm',
+      philosophy: 'Philosophy',
       title: 'Legal Judgment. Technical Precision.',
       subtitle: 'Our firm is founded on procedural excellence and strict discretion in handling sensitive matters.',
       content: [
@@ -255,6 +267,14 @@ export const translations = {
         'We reject volume in favor of exclusive dedication. Each matter requires absolute immersion in the proceedings, where jurisprudential study and criminal dogmatics support every procedural move.',
         'Discretion is not an added value, but an indispensable prerequisite for our professional intervention.'
       ],
+      values: {
+        title: 'Values',
+        items: [
+          { title: 'Selective approach', desc: 'We only take on matters that allow for the highest quality legal direction.' },
+          { title: 'High complexity', desc: 'Specialists in proceedings of high technical, documentary and strategic demand.' },
+          { title: 'Absolute confidentiality', desc: 'Discretion is not an added value — it is a prerequisite of our entire practice.' }
+        ]
+      },
       team: {
         title: 'Team',
         members: [

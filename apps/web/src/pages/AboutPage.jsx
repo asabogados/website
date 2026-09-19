@@ -11,6 +11,7 @@ function AboutPage() {
   
   const content = t('about.content');
   const team = t('about.team.members');
+  const values = t('about.values.items');
 
   const initials = (name) =>
     name
@@ -22,9 +23,9 @@ function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Helmet>
-        <title>Sobre Nosotros | AS Abogados & Asociados - Criterio Jurídico y Excelencia Procesal</title>
+        <title>La Firma | AS Abogados & Asociados - Criterio Jurídico y Excelencia Procesal</title>
         <meta name="description" content="Firma de abogados penalistas con criterio jurídico, excelencia procesal y especialización en asuntos penales complejos de nivel internacional." />
-        <meta property="og:title" content="Sobre Nosotros - AS Abogados & Asociados" />
+        <meta property="og:title" content="La Firma - AS Abogados & Asociados" />
         <meta property="og:description" content="Criterio jurídico, excelencia procesal y especialización en Derecho Penal con rigor técnico internacional." />
         <meta property="og:image" content="https://asabogadosasociados.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
@@ -44,15 +45,21 @@ function AboutPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto"
             >
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif text-foreground mb-12 text-center md:text-left">
-                {t('about.title')}
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-foreground mb-6">
+                {t('about.heading')}
               </h1>
-              
+              <p className="font-serif text-2xl md:text-3xl text-muted-foreground mb-12">
+                {t('about.title')}
+              </p>
+
               <p className="font-serif text-xl md:text-2xl text-foreground leading-relaxed mb-16 pb-16 border-b border-border">
                 {t('home.brand3')}
               </p>
 
-              <div className="space-y-12 text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
+              <h2 className="text-[10px] font-semibold tracking-widest uppercase text-muted-foreground mb-8">
+                {t('about.philosophy')}
+              </h2>
+              <div className="space-y-10 text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
                 {Array.isArray(content) && content.map((paragraph, idx) => (
                   <p key={idx}>{paragraph}</p>
                 ))}
@@ -63,6 +70,26 @@ function AboutPage() {
 
         <section className="pb-24 md:pb-32 bg-background">
           <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6 }}
+              className="max-w-4xl mx-auto border-t border-border pt-16 mb-24"
+            >
+              <h2 className="text-[10px] font-semibold tracking-widest uppercase text-muted-foreground mb-10">
+                {t('about.values.title')}
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-border border border-border">
+                {Array.isArray(values) && values.map((value) => (
+                  <div key={value.title} className="bg-background p-8 flex flex-col gap-4">
+                    <h3 className="font-serif text-xl text-foreground leading-snug">{value.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{value.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
