@@ -90,6 +90,11 @@ function AboutPage() {
                       <p className="mt-2 text-[10px] font-semibold tracking-widest uppercase text-muted-foreground">
                         {member.role}
                       </p>
+                      {member.bio && (
+                        <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+                          {member.bio}
+                        </p>
+                      )}
                     </div>
                   </div>
                 ))}

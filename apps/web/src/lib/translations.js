@@ -41,15 +41,15 @@ export const translations = {
         items: [
           {
             title: 'Nacional',
-            desc: 'Defensa penal ante juzgados de instrucción, Audiencias Provinciales y Audiencia Nacional.'
+            desc: 'Defensa penal y acusación particular ante juzgados de instrucción, Audiencias Provinciales, tribunal del jurado y Audiencia Nacional.'
           },
           {
             title: 'Comunitario',
-            desc: 'Extradiciones y procedimientos de entrega con Estados miembros de la Unión Europea.'
+            desc: 'Experiencia en procedimientos de extradición con países de la Unión Europea.'
           },
           {
             title: 'Internacional',
-            desc: 'Extradiciones a terceros países, entre ellos Estados Unidos, y procedimientos derivados de órdenes internacionales de detención.'
+            desc: 'Experiencia en asuntos internacionales, incluidas extradiciones a terceros países como Estados Unidos.'
           }
         ]
       },
@@ -99,8 +99,8 @@ export const translations = {
       team: {
         title: 'Equipo',
         members: [
-          { name: 'Alfonso Sell Trujillo', role: 'Socio' },
-          { name: 'Pablo Cabo Medina', role: 'Abogado europeo' },
+          { name: 'Alfonso Sell Trujillo', role: 'Socio', bio: 'Amplia experiencia ante tribunales del jurado y en la defensa de delitos graves.' },
+          { name: 'Pablo Cabo Medina', role: 'Abogado europeo', bio: 'Experiencia en extradiciones y asuntos internacionales.' },
           { name: 'Oscar Menéndez González', role: 'Abogado' }
         ]
       }
@@ -247,15 +247,15 @@ export const translations = {
         items: [
           {
             title: 'National',
-            desc: 'Criminal defense before examining courts, Provincial Courts and the National High Court.'
+            desc: 'Criminal defense and private prosecution before examining courts, Provincial Courts, jury trials and the National High Court.'
           },
           {
             title: 'European Union',
-            desc: 'Extradition and surrender proceedings with European Union Member States.'
+            desc: 'Experience in extradition proceedings with European Union countries.'
           },
           {
             title: 'International',
-            desc: 'Extradition to third countries, including the United States, and proceedings arising from international arrest warrants.'
+            desc: 'Experience in international matters, including extradition to third countries such as the United States.'
           }
         ]
       },
@@ -305,8 +305,8 @@ export const translations = {
       team: {
         title: 'Team',
         members: [
-          { name: 'Alfonso Sell Trujillo', role: 'Partner' },
-          { name: 'Pablo Cabo Medina', role: 'European Lawyer' },
+          { name: 'Alfonso Sell Trujillo', role: 'Partner', bio: 'Extensive experience before jury courts and in the defense of serious crimes.' },
+          { name: 'Pablo Cabo Medina', role: 'European Lawyer', bio: 'Experience in extradition and international matters.' },
           { name: 'Oscar Menéndez González', role: 'Lawyer' }
         ]
       }
