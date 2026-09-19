@@ -10,6 +10,14 @@ function AboutPage() {
   const { t } = useTranslation();
   
   const content = t('about.content');
+  const team = t('about.team.members');
+
+  const initials = (name) =>
+    name
+      .split(' ')
+      .slice(0, 2)
+      .map((word) => word[0])
+      .join('');
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -47,6 +55,43 @@ function AboutPage() {
               <div className="space-y-12 text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
                 {Array.isArray(content) && content.map((paragraph, idx) => (
                   <p key={idx}>{paragraph}</p>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        <section className="pb-24 md:pb-32 bg-background">
+          <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6 }}
+              className="max-w-4xl mx-auto border-t border-border pt-16"
+            >
+              <h2 className="text-[10px] font-semibold tracking-widest uppercase text-muted-foreground mb-10">
+                {t('about.team.title')}
+              </h2>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-border border border-border">
+                {Array.isArray(team) && team.map((member) => (
+                  <div key={member.name} className="bg-background p-8 flex flex-col gap-8">
+                    <div
+                      aria-hidden="true"
+                      className="h-16 w-16 border border-border flex items-center justify-center font-serif text-xl tracking-wide text-foreground"
+                    >
+                      {initials(member.name)}
+                    </div>
+                    <div>
+                      <h3 className="font-serif text-xl text-foreground leading-snug">
+                        {member.name}
+                      </h3>
+                      <p className="mt-2 text-[10px] font-semibold tracking-widest uppercase text-muted-foreground">
+                        {member.role}
+                      </p>
+                    </div>
+                  </div>
                 ))}
               </div>
             </motion.div>
