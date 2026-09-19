@@ -36,6 +36,23 @@ export const translations = {
         discretion: 'Confidencialidad absoluta',
         discretionDesc: 'La discreción no es un valor añadido: es un prerrequisito de toda nuestra actuación.'
       },
+      reach: {
+        label: 'Ámbito de actuación',
+        items: [
+          {
+            title: 'Nacional',
+            desc: 'Defensa penal ante juzgados de instrucción, Audiencias Provinciales y Audiencia Nacional.'
+          },
+          {
+            title: 'Comunitario',
+            desc: 'Extradiciones y procedimientos de entrega con Estados miembros de la Unión Europea.'
+          },
+          {
+            title: 'Internacional',
+            desc: 'Extradiciones a terceros países, entre ellos Estados Unidos, y procedimientos derivados de órdenes internacionales de detención.'
+          }
+        ]
+      },
       areas: {
         viewAll: 'Ver todas las áreas'
       },
@@ -98,10 +115,12 @@ export const translations = {
       filters: {
         all: 'Todos',
         national: 'Nacionales',
+        eu: 'Comunitarios',
         international: 'Internacionales'
       },
       scope: {
         national: 'Nacional',
+        eu: 'Comunitario',
         international: 'Internacional'
       },
       readMore: 'Leer la noticia',
@@ -145,7 +164,7 @@ export const translations = {
         },
         {
           date: 'Noviembre 2019',
-          scope: 'international',
+          scope: 'eu',
           title: 'Extradición de España a Finlandia',
           forum: '',
           excerpt: 'Procedimiento de extradición por presuntos delitos de tráfico de drogas y dopaje, tramitado durante más de un mes y con tres resoluciones judiciales.',
@@ -223,6 +242,23 @@ export const translations = {
         discretion: 'Absolute confidentiality',
         discretionDesc: 'Discretion is not an added value — it is a prerequisite of our entire practice.'
       },
+      reach: {
+        label: 'Scope of practice',
+        items: [
+          {
+            title: 'National',
+            desc: 'Criminal defense before examining courts, Provincial Courts and the National High Court.'
+          },
+          {
+            title: 'European Union',
+            desc: 'Extradition and surrender proceedings with European Union Member States.'
+          },
+          {
+            title: 'International',
+            desc: 'Extradition to third countries, including the United States, and proceedings arising from international arrest warrants.'
+          }
+        ]
+      },
       areas: {
         viewAll: 'View all practice areas'
       },
@@ -285,10 +321,12 @@ export const translations = {
       filters: {
         all: 'All',
         national: 'National',
+        eu: 'European Union',
         international: 'International'
       },
       scope: {
         national: 'National',
+        eu: 'European Union',
         international: 'International'
       },
       readMore: 'Read the news report',
@@ -332,7 +370,7 @@ export const translations = {
         },
         {
           date: 'November 2019',
-          scope: 'international',
+          scope: 'eu',
           title: 'Extradition from Spain to Finland',
           forum: '',
           excerpt: 'Extradition proceedings for alleged drug trafficking and doping offences, conducted over more than a month and requiring three judicial decisions.',

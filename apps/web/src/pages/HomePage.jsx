@@ -21,6 +21,7 @@ const ColumnsBg = () => (
 
 function HomePage() {
   const { t } = useTranslation();
+  const reach = t('home.reach.items');
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -127,6 +128,30 @@ function HomePage() {
                   </p>
                 </div>
               ))}
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Ámbito de actuación: nacional / UE / internacional */}
+        <section className="section-padding bg-background border-b border-border">
+          <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8 }}
+            >
+              <span className="block text-[10px] font-semibold tracking-widest uppercase text-muted-foreground mb-10">
+                {t('home.reach.label')}
+              </span>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border border border-border">
+                {Array.isArray(reach) && reach.map((item) => (
+                  <div key={item.title} className="bg-background px-8 py-10 flex flex-col gap-4">
+                    <h3 className="font-serif text-2xl text-foreground">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
             </motion.div>
           </div>
         </section>

@@ -7,7 +7,7 @@ import Footer from '@/components/Footer.jsx';
 import { useTranslation } from '@/hooks/useTranslation.jsx';
 import { ArrowUpRight } from 'lucide-react';
 
-const FILTERS = ['all', 'national', 'international'];
+const FILTERS = ['all', 'national', 'eu', 'international'];
 
 function PublicAffairsPage() {
   const { t } = useTranslation();
