@@ -5,26 +5,96 @@ import { motion } from 'framer-motion';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import { useTranslation } from '@/hooks/useTranslation.jsx';
+import { matters } from '@/lib/matters.js';
 import { ArrowUpRight } from 'lucide-react';
 
 const FILTERS = ['all', 'national', 'eu', 'international'];
 
+const formatDate = (iso, language) => {
+  const text = new Date(iso).toLocaleDateString(language === 'es' ? 'es-ES' : 'en-GB', {
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  });
+  return text.charAt(0).toUpperCase() + text.slice(1);
+};
+
+function MatterCard({ matter, index }) {
+  const { t, language } = useTranslation();
+  const [imageFailed, setImageFailed] = useState(false);
+  const showImage = matter.image && !imageFailed;
+
+  return (
+    <motion.article
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-60px' }}
+      transition={{ duration: 0.5, delay: (index % 3) * 0.08 }}
+      className="bg-background border-r border-b border-border"
+    >
+      <a
+        href={matter.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group flex h-full flex-col hover:bg-secondary/30 focus-visible:bg-secondary/30 focus-visible:outline-none transition-colors duration-300"
+      >
+        {showImage && (
+          <div className="aspect-[3/2] w-full overflow-hidden bg-secondary">
+            <img
+              src={matter.image}
+              alt=""
+              decoding="async"
+              referrerPolicy="no-referrer"
+              onError={() => setImageFailed(true)}
+              className="h-full w-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-[1.02] transition-all duration-500"
+            />
+          </div>
+        )}
+
+        <div className="flex flex-1 flex-col gap-4 p-6 md:p-8">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <span className="text-[10px] font-semibold tracking-widest uppercase text-muted-foreground">
+              {formatDate(matter.date, language)}
+            </span>
+            <span className="text-[10px] font-semibold tracking-widest uppercase text-primary border border-border px-2 py-1">
+              {t(`publicAffairs.scope.${matter.scope}`)}
+            </span>
+          </div>
+
+          <h2
+            lang={matter.lang}
+            className="font-serif text-xl leading-snug text-foreground group-hover:text-primary transition-colors"
+          >
+            {matter.headline}
+          </h2>
+
+          <span className="mt-auto flex items-center justify-between gap-4 pt-2 text-xs tracking-wide text-muted-foreground">
+            <span className="underline underline-offset-4 decoration-border group-hover:decoration-primary transition-colors">
+              {t('publicAffairs.readMore')} · {matter.source}
+            </span>
+            <ArrowUpRight className="h-4 w-4 shrink-0 opacity-60 group-hover:opacity-100 transition-opacity" aria-hidden="true" />
+          </span>
+        </div>
+      </a>
+    </motion.article>
+  );
+}
+
 function PublicAffairsPage() {
   const { t } = useTranslation();
-  const articles = t('publicAffairs.articles');
   const [filter, setFilter] = useState('all');
 
-  const visible = Array.isArray(articles)
-    ? articles.filter((article) => filter === 'all' || article.scope === filter)
-    : [];
+  const visible = matters
+    .filter((matter) => filter === 'all' || matter.scope === filter)
+    .sort((a, b) => b.date.localeCompare(a.date));
 
   return (
     <div className="flex flex-col min-h-screen">
       <Helmet>
-        <title>Asuntos Públicos | AS Abogados & Asociados - Análisis Jurídico Especializado</title>
-        <meta name="description" content="Análisis jurídico especializado en asuntos públicos y procedimientos penales de relevancia institucional con perspectiva técnica." />
-        <meta property="og:title" content="Asuntos Públicos - AS Abogados & Asociados" />
-        <meta property="og:description" content="Análisis jurídico especializado en asuntos públicos y procedimientos penales de relevancia institucional." />
+        <title>Asuntos en los que hemos intervenido | AS Abogados & Asociados</title>
+        <meta name="description" content="Selección de asuntos penales en los que ha intervenido AS Abogados & Asociados, con cobertura de medios de comunicación nacionales e internacionales." />
+        <meta property="og:title" content="Asuntos en los que hemos intervenido - AS Abogados & Asociados" />
+        <meta property="og:description" content="Selección de asuntos penales con repercusión en medios de comunicación nacionales e internacionales." />
         <meta property="og:image" content="https://asabogadosasociados.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -70,51 +140,9 @@ function PublicAffairsPage() {
               ))}
             </div>
 
-            <div className="grid grid-cols-1 gap-px bg-border">
-              {visible.map((article, index) => (
-                <motion.article
-                  key={article.url}
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-background"
-                >
-                  <a
-                    href={article.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 p-8 md:p-12 hover:bg-secondary/30 focus-visible:bg-secondary/30 focus-visible:outline-none transition-colors duration-300"
-                  >
-                    <div className="md:col-span-3 flex md:flex-col gap-x-4 gap-y-3 items-center md:items-start">
-                      <span className="text-[10px] font-semibold tracking-widest uppercase text-muted-foreground">
-                        {article.date}
-                      </span>
-                      <span className="text-[10px] font-semibold tracking-widest uppercase text-primary border border-border px-2 py-1">
-                        {t(`publicAffairs.scope.${article.scope}`)}
-                      </span>
-                    </div>
-                    <div className="md:col-span-8">
-                      <h2 className="text-xl md:text-2xl font-serif text-foreground mb-3 group-hover:text-primary transition-colors">
-                        {article.title}
-                      </h2>
-                      {article.forum && (
-                        <p className="text-[10px] font-semibold tracking-widest uppercase text-muted-foreground mb-4">
-                          {article.forum}
-                        </p>
-                      )}
-                      <p className="text-muted-foreground text-sm leading-relaxed mb-5">
-                        {article.excerpt}
-                      </p>
-                      <span className="text-xs tracking-wide text-foreground underline underline-offset-4 decoration-border group-hover:decoration-primary transition-colors">
-                        {t('publicAffairs.readMore')} · {article.source}
-                      </span>
-                    </div>
-                    <div className="hidden md:flex md:col-span-1 items-start justify-end">
-                      <ArrowUpRight className="text-muted-foreground opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity" aria-hidden="true" />
-                    </div>
-                  </a>
-                </motion.article>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-l border-border">
+              {visible.map((matter, index) => (
+                <MatterCard key={matter.id} matter={matter} index={index} />
               ))}
             </div>
 

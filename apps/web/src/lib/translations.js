@@ -5,7 +5,7 @@ export const translations = {
       home: 'Inicio',
       areas: 'Áreas de Práctica',
       about: 'Sobre Nosotros',
-      publicAffairs: 'Asuntos Públicos',
+      publicAffairs: 'Asuntos',
       contact: 'Contacto'
     },
     home: {
@@ -99,19 +99,19 @@ export const translations = {
       team: {
         title: 'Equipo',
         members: [
-          { name: 'Alfonso Sell Trujillo', role: 'Socio', bio: 'Amplia experiencia ante tribunales del jurado y en la defensa de delitos graves.' },
-          { name: 'Pablo Cabo Medina', role: 'Abogado europeo', bio: 'Experiencia en extradiciones y asuntos internacionales.' },
+          { name: 'Alfonso Sell Trujillo', role: 'Socio Fundador', bio: 'Amplia experiencia ante tribunales del jurado y en la defensa de delitos graves.' },
+          { name: 'Pablo Cabo Medina', role: 'Abogado Europeo', bio: 'Experiencia en extradiciones y asuntos internacionales.' },
           { name: 'Oscar Menéndez González', role: 'Abogado' }
         ]
       }
     },
     publicAffairs: {
       meta: {
-        title: 'Asuntos Públicos | AS Abogados & Asociados',
-        description: 'Análisis jurídico y contenido especializado.'
+        title: 'Asuntos | AS Abogados & Asociados',
+        description: 'Asuntos penales en los que ha intervenido AS Abogados & Asociados.'
       },
-      title: 'Asuntos Públicos',
-      subtitle: 'Asuntos relevantes en los que AS Abogados & Asociados ha intervenido como defensa, con cobertura de medios nacionales e internacionales.',
+      title: 'Asuntos en los que hemos intervenido',
+      subtitle: 'Selección de asuntos con repercusión en medios de comunicación nacionales e internacionales.',
       filters: {
         all: 'Todos',
         national: 'Nacionales',
@@ -124,54 +124,7 @@ export const translations = {
         international: 'Internacional'
       },
       readMore: 'Leer la noticia',
-      disclaimer: 'La información se limita a hechos ya divulgados por medios de comunicación. Toda persona investigada o acusada se presume inocente mientras no recaiga sentencia firme.',
-      articles: [
-        {
-          date: 'Junio 2025',
-          scope: 'international',
-          title: 'Organización criminal y extorsión con dimensión internacional',
-          forum: 'Audiencia Provincial de Málaga',
-          excerpt: 'Procedimiento por presuntos delitos de organización criminal, extorsión, blanqueo de capitales y falsedad, con conexiones en el extranjero. El juicio se celebró con conformidad entre las partes.',
-          source: 'Diario SUR',
-          url: 'https://www.diariosur.es/sucesos/trama-altos-funcionarios-rusos-extorsiono-circulo-putin-marbella-20250603170027-nt.html'
-        },
-        {
-          date: 'Agosto 2024',
-          scope: 'national',
-          title: 'Estafa y falsedad documental en una operación inmobiliaria',
-          forum: 'Juzgado de Instrucción n.º 5 de Estepona',
-          excerpt: 'Investigación por presuntos delitos de estafa, falsedad en documento público y privado y blanqueo de capitales, vinculados a la venta de una finca en Sotogrande.',
-          source: 'Europa Press',
-          url: 'https://www.europapress.es/andalucia/malaga-00356/noticia-dos-detenidos-manilva-cadiz-venta-fraudulenta-estafa-finca-valorada-mas-12-millones-20240828144521.html'
-        },
-        {
-          date: 'Mayo 2024',
-          scope: 'national',
-          title: 'Asesinato y depósito de armas de guerra ante tribunal del jurado',
-          forum: 'Audiencia Provincial de Málaga',
-          excerpt: 'Procedimiento por un presunto delito de asesinato y otro de depósito de armas de guerra, enjuiciado por tribunal del jurado.',
-          source: 'Diario SUR',
-          url: 'https://www.diariosur.es/sucesos/juicio-crimen-tiros-hombre-marbella-20240506142506-nt.html'
-        },
-        {
-          date: 'Marzo 2023',
-          scope: 'international',
-          title: 'Extradición por presunto terrorismo',
-          forum: 'Audiencia Nacional',
-          excerpt: 'Detención en Vélez-Málaga en ejecución de una orden internacional de detención cursada a través de Interpol. Correspondió a la Audiencia Nacional resolver sobre la extradición solicitada por un Estado de Asia Central.',
-          source: 'ABC',
-          url: 'https://www.abc.es/espana/andalucia/malaga/detenido-velezmalaga-terrorista-turkmenistan-animo-poblacion-tomar-20230324120842-nts.html'
-        },
-        {
-          date: 'Noviembre 2019',
-          scope: 'eu',
-          title: 'Extradición de España a Finlandia',
-          forum: '',
-          excerpt: 'Procedimiento de extradición por presuntos delitos de tráfico de drogas y dopaje, tramitado durante más de un mes y con tres resoluciones judiciales.',
-          source: 'MTV Uutiset (Finlandia)',
-          url: 'https://www.mtvuutiset.fi/artikkeli/nacci-tranbergin-espanjalainen-lakimies-mtv-lle-tranberg-on-tuotu-suomeen-viime-yona/7640540'
-        }
-      ]
+      disclaimer: 'Enlaces a noticias publicadas por medios de comunicación independientes, cuyo contenido no es responsabilidad de AS Abogados & Asociados. Toda persona investigada o acusada se presume inocente mientras no recaiga sentencia firme.'
     },
     contact: {
       meta: {
@@ -211,7 +164,7 @@ export const translations = {
       home: 'Home',
       areas: 'Practice Areas',
       about: 'About Us',
-      publicAffairs: 'Public Affairs',
+      publicAffairs: 'Matters',
       contact: 'Contact'
     },
     home: {
@@ -305,7 +258,7 @@ export const translations = {
       team: {
         title: 'Team',
         members: [
-          { name: 'Alfonso Sell Trujillo', role: 'Partner', bio: 'Extensive experience before jury courts and in the defense of serious crimes.' },
+          { name: 'Alfonso Sell Trujillo', role: 'Founding Partner', bio: 'Extensive experience before jury courts and in the defense of serious crimes.' },
           { name: 'Pablo Cabo Medina', role: 'European Lawyer', bio: 'Experience in extradition and international matters.' },
           { name: 'Oscar Menéndez González', role: 'Lawyer' }
         ]
@@ -313,11 +266,11 @@ export const translations = {
     },
     publicAffairs: {
       meta: {
-        title: 'Public Affairs | AS Abogados & Asociados',
-        description: 'Legal analysis and specialized content.'
+        title: 'Matters | AS Abogados & Asociados',
+        description: 'Criminal matters in which AS Abogados & Asociados has acted.'
       },
-      title: 'Public Affairs',
-      subtitle: 'Notable matters in which AS Abogados & Asociados has acted as defense counsel, covered by national and international media.',
+      title: 'Matters in which we have acted',
+      subtitle: 'A selection of matters covered by national and international media.',
       filters: {
         all: 'All',
         national: 'National',
@@ -330,54 +283,7 @@ export const translations = {
         international: 'International'
       },
       readMore: 'Read the news report',
-      disclaimer: 'The information is limited to facts already made public by the media. Any person under investigation or accused is presumed innocent until a final judgment is handed down.',
-      articles: [
-        {
-          date: 'June 2025',
-          scope: 'international',
-          title: 'Criminal organization and extortion with an international dimension',
-          forum: 'Provincial Court of Málaga',
-          excerpt: 'Proceedings for alleged offences of criminal organization, extortion, money laundering and forgery, with connections abroad. The trial was held with an agreement between the parties.',
-          source: 'Diario SUR',
-          url: 'https://www.diariosur.es/sucesos/trama-altos-funcionarios-rusos-extorsiono-circulo-putin-marbella-20250603170027-nt.html'
-        },
-        {
-          date: 'August 2024',
-          scope: 'national',
-          title: 'Fraud and document forgery in a real estate transaction',
-          forum: 'Examining Court No. 5 of Estepona',
-          excerpt: 'Investigation into alleged fraud, forgery of public and private documents and money laundering, linked to the sale of an estate in Sotogrande.',
-          source: 'Europa Press',
-          url: 'https://www.europapress.es/andalucia/malaga-00356/noticia-dos-detenidos-manilva-cadiz-venta-fraudulenta-estafa-finca-valorada-mas-12-millones-20240828144521.html'
-        },
-        {
-          date: 'May 2024',
-          scope: 'national',
-          title: 'Murder and possession of military-grade weapons before a jury court',
-          forum: 'Provincial Court of Málaga',
-          excerpt: 'Proceedings for an alleged murder and an alleged offence of possession of military-grade weapons, tried before a jury court.',
-          source: 'Diario SUR',
-          url: 'https://www.diariosur.es/sucesos/juicio-crimen-tiros-hombre-marbella-20240506142506-nt.html'
-        },
-        {
-          date: 'March 2023',
-          scope: 'international',
-          title: 'Extradition for alleged terrorism',
-          forum: 'National High Court (Audiencia Nacional)',
-          excerpt: 'Arrest in Vélez-Málaga under an international arrest warrant issued through Interpol. The National High Court was to rule on the extradition requested by a Central Asian State.',
-          source: 'ABC',
-          url: 'https://www.abc.es/espana/andalucia/malaga/detenido-velezmalaga-terrorista-turkmenistan-animo-poblacion-tomar-20230324120842-nts.html'
-        },
-        {
-          date: 'November 2019',
-          scope: 'eu',
-          title: 'Extradition from Spain to Finland',
-          forum: '',
-          excerpt: 'Extradition proceedings for alleged drug trafficking and doping offences, conducted over more than a month and requiring three judicial decisions.',
-          source: 'MTV Uutiset (Finland)',
-          url: 'https://www.mtvuutiset.fi/artikkeli/nacci-tranbergin-espanjalainen-lakimies-mtv-lle-tranberg-on-tuotu-suomeen-viime-yona/7640540'
-        }
-      ]
+      disclaimer: 'Links to news published by independent media outlets, whose content is not the responsibility of AS Abogados & Asociados. Any person under investigation or accused is presumed innocent until a final judgment is handed down.'
     },
     contact: {
       meta: {

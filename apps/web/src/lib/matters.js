@@ -1,0 +1,55 @@
+// Asuntos en los que ha intervenido el despacho, tal como los recogió la prensa.
+// `image: null` oculta la foto de esa tarjeta.
+export const matters = [
+  {
+    id: 'extorsion-marbella',
+    date: '2025-06-03',
+    scope: 'international',
+    headline: 'La trama de altos funcionarios rusos que extorsionó al círculo de Putin desde Marbella: penas mínimas y multas millonarias',
+    lang: 'es',
+    source: 'Diario SUR',
+    url: 'https://www.diariosur.es/sucesos/trama-altos-funcionarios-rusos-extorsiono-circulo-putin-marbella-20250603170027-nt.html',
+    image: 'https://s2.ppllstatics.com/diariosur/www/multimedia/2025/06/03/ciudad-justicia-kSnB-U6092900180%20(6)-RqI1DE4SDcrslJewpSZW2OM-1200x840@Diario%20Sur.jpg',
+  },
+  {
+    id: 'estafa-finca',
+    date: '2024-08-28',
+    scope: 'national',
+    headline: 'Dos detenidos en Manilva y Cádiz por venta fraudulenta mediante estafa de una finca valorada en más de 1,2 millones',
+    lang: 'es',
+    source: 'Europa Press',
+    url: 'https://www.europapress.es/andalucia/malaga-00356/noticia-dos-detenidos-manilva-cadiz-venta-fraudulenta-estafa-finca-valorada-mas-12-millones-20240828144521.html',
+    image: 'https://img.europapress.es/fotoweb/fotonoticia_20240828144521_1200.jpg',
+  },
+  {
+    id: 'jurado-marbella',
+    date: '2024-05-06',
+    scope: 'national',
+    headline: 'Dos supuestos sicarios, a juicio por el crimen a tiros de un hombre en pleno centro de Marbella',
+    lang: 'es',
+    source: 'Diario SUR',
+    url: 'https://www.diariosur.es/sucesos/juicio-crimen-tiros-hombre-marbella-20240506142506-nt.html',
+    image: 'https://s3.ppllstatics.com/diariosur/www/multimedia/2024/05/06/d9so-R914RyYagf85NasjGoXplWN-1200x840@Diario%20Sur.jpg',
+  },
+  {
+    id: 'extradicion-turkmenistan',
+    date: '2023-03-24',
+    scope: 'international',
+    headline: 'Detenido en Vélez-Málaga un terrorista de Turkmenistán que animó a la población a tomar el poder en los medios',
+    lang: 'es',
+    source: 'ABC',
+    url: 'https://www.abc.es/espana/andalucia/malaga/detenido-velezmalaga-terrorista-turkmenistan-animo-poblacion-tomar-20230324120842-nts.html',
+    image: 'https://s1.abcstatics.com/abc/www/multimedia/espana/2023/03/24/policia-nacional-recurso-U44474342532rRs-1024x512@abc.JPG',
+  },
+  {
+    id: 'extradicion-finlandia',
+    date: '2019-11-28',
+    scope: 'eu',
+    headline: 'Janne "Nacci" Tranbergin espanjalainen lakimies MTV:lle: "Tranberg on tuotu Suomeen viime yönä"',
+    lang: 'fi',
+    source: 'MTV Uutiset',
+    url: 'https://www.mtvuutiset.fi/artikkeli/nacci-tranbergin-espanjalainen-lakimies-mtv-lle-tranberg-on-tuotu-suomeen-viime-yona/7640540',
+    // La foto de la noticia es un retrato de una persona identificable: desactivada hasta confirmar.
+    image: null,
+  },
+];
