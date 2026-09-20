@@ -43,13 +43,12 @@ export const matters = [
   },
   {
     id: 'extradicion-finlandia',
-    date: '2019-11-28',
+    date: '2019-11-21',
     scope: 'eu',
-    headline: 'Janne "Nacci" Tranbergin espanjalainen lakimies MTV:lle: "Tranberg on tuotu Suomeen viime yönä"',
+    headline: 'Nyt puhuu Janne Tranbergin asianajaja: "Nacci" vietti Espanjassa eläkepäiviään, luovutusprosessissa on tehty virheitä',
     lang: 'fi',
     source: 'MTV Uutiset',
-    url: 'https://www.mtvuutiset.fi/artikkeli/nacci-tranbergin-espanjalainen-lakimies-mtv-lle-tranberg-on-tuotu-suomeen-viime-yona/7640540',
-    // La foto de la noticia es un retrato de una persona identificable: desactivada hasta confirmar.
-    image: null,
+    url: 'https://www.mtvuutiset.fi/artikkeli/nyt-puhuu-janne-tranbergin-asianajaja-nacci-vietti-espanjassa-elakepaiviaan-luovutusprosessissa-on-tehty-virheita-haluamme-varmistaa-etta-han-saa-oikeudenmukaisen-oikeudenkaynnin-suomessa/7633000',
+    image: 'https://api.mtvuutiset.fi/graphql/caas/v1/media/share/7612178/ab3df3a5401260e6b1923ec8560639f3/kuvitus-malaga-janne-nacci-tranberg.jpg',
   },
 ];

@@ -53,6 +53,10 @@ export const translations = {
           }
         ]
       },
+      featured: {
+        title: 'Noticias destacadas',
+        viewAll: 'Ver toda la experiencia'
+      },
       areas: {
         viewAll: 'Ver todas las áreas'
       },
@@ -92,7 +96,7 @@ export const translations = {
       heading: 'La Firma',
       philosophy: 'Filosofía',
       title: 'Criterio Jurídico. Precisión Técnica.',
-      subtitle: 'Nuestra firma se fundamenta en la excelencia procesal y la máxima discreción en la gestión de asuntos sensibles.',
+      subtitle: 'Nuestra firma se fundamenta en la excelencia procesal y el rigor técnico.',
       content: [
         'AS Abogados & Asociados opera bajo un enfoque selectivo. La asunción de la dirección letrada está supeditada a un análisis riguroso de la viabilidad técnica y las exigencias del procedimiento.',
         'Rechazamos el volumen en favor de la dedicación exclusiva. Cada asunto requiere una inmersión absoluta en las actuaciones, donde el estudio jurisprudencial y la dogmática penal sustentan cada movimiento procesal.',
@@ -222,6 +226,10 @@ export const translations = {
           }
         ]
       },
+      featured: {
+        title: 'Featured news',
+        viewAll: 'View all experience'
+      },
       areas: {
         viewAll: 'View all practice areas'
       },
@@ -261,7 +269,7 @@ export const translations = {
       heading: 'The Firm',
       philosophy: 'Philosophy',
       title: 'Legal Judgment. Technical Precision.',
-      subtitle: 'Our firm is founded on procedural excellence and strict discretion in handling sensitive matters.',
+      subtitle: 'Our firm is founded on procedural excellence and technical rigor.',
       content: [
         'AS Abogados & Asociados operates under a selective approach. The assumption of legal representation is contingent upon a rigorous analysis of technical viability and procedural demands.',
         'We reject volume in favor of exclusive dedication. Each matter requires absolute immersion in the proceedings, where jurisprudential study and criminal dogmatics support every procedural move.',
