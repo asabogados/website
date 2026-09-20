@@ -104,12 +104,23 @@ function AboutPage() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-border border border-border">
                 {Array.isArray(team) && team.map((member) => (
                   <div key={member.name} className="bg-background p-8 flex flex-col gap-8">
-                    <div
-                      aria-hidden="true"
-                      className="h-16 w-16 border border-border flex items-center justify-center font-serif text-xl tracking-wide text-foreground"
-                    >
-                      {initials(member.name)}
-                    </div>
+                    {member.photo ? (
+                      <img
+                        src={member.photo}
+                        alt={member.name}
+                        width="800"
+                        height="800"
+                        decoding="async"
+                        className="aspect-square w-full object-cover"
+                      />
+                    ) : (
+                      <div
+                        aria-hidden="true"
+                        className="h-16 w-16 border border-border flex items-center justify-center font-serif text-xl tracking-wide text-foreground"
+                      >
+                        {initials(member.name)}
+                      </div>
+                    )}
                     <div>
                       <h3 className="font-serif text-xl text-foreground leading-snug">
                         {member.name}

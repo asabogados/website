@@ -112,7 +112,7 @@ export const translations = {
       team: {
         title: 'Equipo',
         members: [
-          { name: 'Alfonso Sell Trujillo', role: 'Socio Fundador', bio: 'Amplia experiencia ante tribunales del jurado y en la defensa de delitos graves.' },
+          { name: 'Alfonso Sell Trujillo', photo: '/team/alfonso-sell.jpg', role: 'Socio Fundador', bio: 'Amplia experiencia ante tribunales del jurado y en la defensa de delitos graves.' },
           { name: 'Pablo Cabo Medina', role: 'Abogado Europeo', bio: 'Experiencia en extradiciones y asuntos internacionales.' },
           { name: 'Oscar Menéndez González', role: 'Abogado' }
         ]
@@ -284,7 +284,7 @@ export const translations = {
       team: {
         title: 'Team',
         members: [
-          { name: 'Alfonso Sell Trujillo', role: 'Founding Partner', bio: 'Extensive experience before jury courts and in the defense of serious crimes.' },
+          { name: 'Alfonso Sell Trujillo', photo: '/team/alfonso-sell.jpg', role: 'Founding Partner', bio: 'Extensive experience before jury courts and in the defense of serious crimes.' },
           { name: 'Pablo Cabo Medina', role: 'European Lawyer', bio: 'Experience in extradition and international matters.' },
           { name: 'Oscar Menéndez González', role: 'Lawyer' }
         ]
