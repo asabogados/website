@@ -144,13 +144,25 @@ function HomePage() {
               <span className="block text-[10px] font-semibold tracking-widest uppercase text-muted-foreground mb-10">
                 {t('home.reach.label')}
               </span>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border border border-border">
-                {Array.isArray(reach) && reach.map((item) => (
-                  <div key={item.title} className="bg-background px-8 py-10 flex flex-col gap-4">
-                    <h3 className="font-serif text-2xl text-foreground">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
-                  </div>
-                ))}
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 items-stretch">
+                <div className="md:col-span-5 overflow-hidden bg-secondary">
+                  <img
+                    src="/audiencia-nacional.jpg"
+                    alt="Fachada de la Audiencia Nacional, Madrid"
+                    width="1428"
+                    height="1600"
+                    decoding="async"
+                    className="h-full w-full max-h-[420px] md:max-h-none object-cover object-[50%_35%]"
+                  />
+                </div>
+                <div className="md:col-span-7 grid grid-cols-1 gap-px bg-border border border-border self-start md:self-stretch">
+                  {Array.isArray(reach) && reach.map((item) => (
+                    <div key={item.title} className="bg-background px-8 py-10 flex flex-col justify-center gap-4">
+                      <h3 className="font-serif text-2xl text-foreground">{item.title}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </motion.div>
           </div>
