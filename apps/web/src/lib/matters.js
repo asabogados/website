@@ -1,4 +1,5 @@
 // Asuntos en los que ha intervenido el despacho, tal como los recogió la prensa.
+// `headline` puede ser un texto o { es, en } si se traduce; `lang` es el idioma de la noticia enlazada.
 // `image: null` oculta la foto de esa tarjeta.
 export const matters = [
   {
@@ -45,8 +46,11 @@ export const matters = [
     id: 'extradicion-finlandia',
     date: '2019-11-21',
     scope: 'eu',
-    headline: 'Nyt puhuu Janne Tranbergin asianajaja: "Nacci" vietti Espanjassa eläkepäiviään, luovutusprosessissa on tehty virheitä',
-    lang: 'fi',
+    headline: {
+      es: 'Habla el abogado de Janne Tranberg: "Nacci" pasaba sus días de jubilación en España y en el proceso de extradición se han cometido errores',
+      en: 'Janne Tranberg\'s lawyer speaks: "Nacci" was spending his retirement in Spain and mistakes were made in the extradition process',
+    },
+    lang: 'fi', // idioma original de la noticia (el enlace lleva al artículo en finés)
     source: 'MTV Uutiset',
     url: 'https://www.mtvuutiset.fi/artikkeli/nyt-puhuu-janne-tranbergin-asianajaja-nacci-vietti-espanjassa-elakepaiviaan-luovutusprosessissa-on-tehty-virheita-haluamme-varmistaa-etta-han-saa-oikeudenmukaisen-oikeudenkaynnin-suomessa/7633000',
     image: '/press/extradicion-finlandia.jpg',

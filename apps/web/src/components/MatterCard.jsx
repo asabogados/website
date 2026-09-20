@@ -16,6 +16,8 @@ const formatDate = (iso, language) => {
 function MatterCard({ matter, index = 0, as: Heading = 'h2' }) {
   const { t, language } = useTranslation();
   const [imageFailed, setImageFailed] = useState(false);
+  const translated = typeof matter.headline === 'object';
+  const headline = translated ? matter.headline[language] : matter.headline;
   const showImage = matter.image && !imageFailed;
 
   return (
@@ -56,10 +58,10 @@ function MatterCard({ matter, index = 0, as: Heading = 'h2' }) {
           </div>
 
           <Heading
-            lang={matter.lang}
+            lang={translated ? language : matter.lang}
             className="font-serif text-xl leading-snug text-foreground group-hover:text-primary transition-colors"
           >
-            {matter.headline}
+            {headline}
           </Heading>
 
           <span className="mt-auto flex items-center justify-between gap-4 pt-2 text-xs tracking-wide text-muted-foreground">
