@@ -33,8 +33,8 @@ export const translations = {
         selectiveDesc: 'Asumimos únicamente los asuntos que admiten una dirección letrada de máxima calidad.',
         complex: 'Alta complejidad',
         complexDesc: 'Especializados en procedimientos de elevada exigencia técnica, documental y estratégica.',
-        discretion: 'Confidencialidad absoluta',
-        discretionDesc: 'La discreción no es un valor añadido: es un prerrequisito de toda nuestra actuación.'
+        discretion: 'Dedicación exclusiva',
+        discretionDesc: 'Rechazamos el volumen: cada asunto recibe una inmersión absoluta en las actuaciones.'
       },
       reach: {
         label: 'Ámbito de actuación',
@@ -99,15 +99,14 @@ export const translations = {
       subtitle: 'Nuestra firma se fundamenta en la excelencia procesal y el rigor técnico.',
       content: [
         'AS Abogados & Asociados opera bajo un enfoque selectivo. La asunción de la dirección letrada está supeditada a un análisis riguroso de la viabilidad técnica y las exigencias del procedimiento.',
-        'Rechazamos el volumen en favor de la dedicación exclusiva. Cada asunto requiere una inmersión absoluta en las actuaciones, donde el estudio jurisprudencial y la dogmática penal sustentan cada movimiento procesal.',
-        'La discreción no es un valor añadido, sino un prerrequisito indispensable de nuestra actuación profesional.'
+        'Rechazamos el volumen en favor de la dedicación exclusiva. Cada asunto requiere una inmersión absoluta en las actuaciones, donde el estudio jurisprudencial y la dogmática penal sustentan cada movimiento procesal.'
       ],
       values: {
         title: 'Valores',
         items: [
           { title: 'Enfoque selectivo', desc: 'Asumimos únicamente los asuntos que admiten una dirección letrada de máxima calidad.' },
           { title: 'Alta complejidad', desc: 'Especializados en procedimientos de elevada exigencia técnica, documental y estratégica.' },
-          { title: 'Confidencialidad absoluta', desc: 'La discreción no es un valor añadido: es un prerrequisito de toda nuestra actuación.' }
+          { title: 'Dedicación exclusiva', desc: 'Rechazamos el volumen: cada asunto recibe una inmersión absoluta en las actuaciones.' }
         ]
       },
       team: {
@@ -206,8 +205,8 @@ export const translations = {
         selectiveDesc: 'We only take on matters that allow for the highest quality legal direction.',
         complex: 'High complexity',
         complexDesc: 'Specialists in proceedings of high technical, documentary and strategic demand.',
-        discretion: 'Absolute confidentiality',
-        discretionDesc: 'Discretion is not an added value — it is a prerequisite of our entire practice.'
+        discretion: 'Exclusive dedication',
+        discretionDesc: 'We reject volume: every matter receives absolute immersion in the proceedings.'
       },
       reach: {
         label: 'Scope of practice',
@@ -272,15 +271,14 @@ export const translations = {
       subtitle: 'Our firm is founded on procedural excellence and technical rigor.',
       content: [
         'AS Abogados & Asociados operates under a selective approach. The assumption of legal representation is contingent upon a rigorous analysis of technical viability and procedural demands.',
-        'We reject volume in favor of exclusive dedication. Each matter requires absolute immersion in the proceedings, where jurisprudential study and criminal dogmatics support every procedural move.',
-        'Discretion is not an added value, but an indispensable prerequisite for our professional intervention.'
+        'We reject volume in favor of exclusive dedication. Each matter requires absolute immersion in the proceedings, where jurisprudential study and criminal dogmatics support every procedural move.'
       ],
       values: {
         title: 'Values',
         items: [
           { title: 'Selective approach', desc: 'We only take on matters that allow for the highest quality legal direction.' },
           { title: 'High complexity', desc: 'Specialists in proceedings of high technical, documentary and strategic demand.' },
-          { title: 'Absolute confidentiality', desc: 'Discretion is not an added value — it is a prerequisite of our entire practice.' }
+          { title: 'Exclusive dedication', desc: 'We reject volume: every matter receives absolute immersion in the proceedings.' }
         ]
       },
       team: {
