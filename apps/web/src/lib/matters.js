@@ -3,16 +3,6 @@
 // `image: null` oculta la foto de esa tarjeta.
 export const matters = [
   {
-    id: 'extorsion-marbella',
-    date: '2025-06-03',
-    scope: 'international',
-    headline: 'La trama de altos funcionarios rusos que extorsionó al círculo de Putin desde Marbella: penas mínimas y multas millonarias',
-    lang: 'es',
-    source: 'Diario SUR',
-    url: 'https://www.diariosur.es/sucesos/trama-altos-funcionarios-rusos-extorsiono-circulo-putin-marbella-20250603170027-nt.html',
-    image: '/press/extorsion-marbella.jpg',
-  },
-  {
     id: 'estafa-finca',
     date: '2024-08-28',
     scope: 'national',
@@ -21,16 +11,6 @@ export const matters = [
     source: 'Europa Press',
     url: 'https://www.europapress.es/andalucia/malaga-00356/noticia-dos-detenidos-manilva-cadiz-venta-fraudulenta-estafa-finca-valorada-mas-12-millones-20240828144521.html',
     image: '/press/estafa-finca.jpg',
-  },
-  {
-    id: 'jurado-marbella',
-    date: '2024-05-06',
-    scope: 'national',
-    headline: 'Dos supuestos sicarios, a juicio por el crimen a tiros de un hombre en pleno centro de Marbella',
-    lang: 'es',
-    source: 'Diario SUR',
-    url: 'https://www.diariosur.es/sucesos/juicio-crimen-tiros-hombre-marbella-20240506142506-nt.html',
-    image: '/press/jurado-marbella.jpg',
   },
   {
     id: 'extradicion-turkmenistan',
